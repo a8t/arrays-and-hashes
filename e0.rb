@@ -218,4 +218,27 @@ puts sum([1234234,12342134312341234])
 puts sum([1,2,3,4,5])
 
 # Exercise 8
-grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
+grocery_list = ["carrots", "toilet paper", "apples", "salmon", 'bananas']
+
+# 1
+grocery_list.each { |item| puts "• #{item}"}
+
+# 1 again
+grocery_list << "rice"
+grocery_list.each { |item| puts "• #{item}"}
+
+# 2
+puts grocery_list.count
+
+# 3
+puts ((grocery_list.include? 'bananas') ? "You need to pick up bananas." : "You don't need to pick up bananas today.")
+
+# 4
+puts grocery_list[1]
+
+# 5
+grocery_list.sort.each { |item| puts "• #{item}"}
+
+# 6
+grocery_list.delete('salmon')
+puts grocery_list.sort.each { |item| puts "• #{item}"}
